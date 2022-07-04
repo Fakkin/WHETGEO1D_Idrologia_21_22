@@ -9,21 +9,21 @@ def home = oms_prj
 
 
 
-def richardsGridFileName = "$oms_prj//data/Grid_NetCDF/ex00_grid_idrologia_21_22.nc"
+def richardsGridFileName = "$oms_prj//data/Grid_NetCDF/ex00_GSS2021.nc" // Griglia elaborata col notebook
 
-def typeClosureEquation = "{Van Genuchten}"
+def typeClosureEquation = "{Van Genuchten}"  // Modello curve SWRC
 
 def typeEquationState = "{Van Genuchten}"
 
-def typeUHCModel = "{Mualem Van Genuchten}"
+def typeUHCModel = "{Mualem Van Genuchten}"  // Conducibilità idraulica insatura
 
-def typeUHCTemperatureModel = "notemperature"
+def typeUHCTemperatureModel = "notemperature"  //parametro temperatura
 
-def interfaceHydraulicConductivityModel = "max"
+def interfaceHydraulicConductivityModel = "max"  // lascia max
 
-def topBCType = "Top Dirichlet"
+def topBCType = "Top Dirichlet"  // tipo di Condizioni al contorno in superficie 
 
-def bottomBCType = "Bottom free drainage"
+def bottomBCType = "Bottom free drainage"  // tipo di condizioni al contorno sul fondo
 
 def stationID = "0"
 
@@ -31,18 +31,18 @@ def startDate= "2020-01-01 00:00"
 
 def endDate="2020-01-02 00:00"
 
-def tTimestep = 1
+def tTimestep = 1 //minuti
 
-def topBCFileName = "$oms_prj//data/Timeseries/ex00_water_ponding.csv"
+def topBCFileName = "$oms_prj//data/Timeseries/ex00_water_ponding.csv"  // Boundary Condition condizioni al contorno TOP
 
-def bottomBCFileName = "$oms_prj//data/Timeseries/ex00_free_drainage.csv"
+def bottomBCFileName = "$oms_prj//data/Timeseries/ex00_free_drainage.csv"  // Bottom BC
 
-def saveDatesFileName = "$oms_prj//data/Timeseries/ex00_save_dates.csv"
+def saveDatesFileName = "$oms_prj//data/Timeseries/ex00_save_dates.csv"  //serie temporale per decidere quali dati salvare
 
 def outputFileName = "$oms_prj//output/ex00.nc"
 
 
-def writeFrequency = 10000
+def writeFrequency = 10000  //frequenza con cui vengono salvati i file di output sul computer
 
 
 solver = OMS3.sim(name: "Integrate PDE", {
