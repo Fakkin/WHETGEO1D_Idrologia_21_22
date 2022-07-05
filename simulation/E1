@@ -9,7 +9,7 @@ def home = oms_prj
 
 
 
-def richardsGridFileName = "$oms_prj//data/Grid_NetCDF/E1_0.nc" // Griglia elaborata col notebook
+def richardsGridFileName = "$oms_prj//data/Grid_NetCDF/E1_Output.nc" // Griglia elaborata col notebook
 
 def typeClosureEquation = "{Van Genuchten}"  // Modello curve SWRC
 
@@ -27,9 +27,9 @@ def bottomBCType = "Bottom free drainage"  // tipo di condizioni al contorno sul
 
 def stationID = "0"
 
-def startDate= "2020-01-01 00:00"
+def startDate= "2022-01-01 00:00"
 
-def endDate="2020-01-02 00:00"
+def endDate="2022-01-02 00:00"
 
 def tTimestep = 1 //minuti
 
@@ -39,7 +39,7 @@ def bottomBCFileName = "$oms_prj//data/Timeseries/E1_free_drainage.csv"  // Bott
 
 def saveDatesFileName = "$oms_prj//data/Timeseries/E1_save_dates.csv"  //serie temporale per decidere quali dati salvare
 
-def outputFileName = "$oms_prj//output/E1.nc"
+def outputFileName = "$oms_prj//output/E1_Output.nc"
 
 
 def writeFrequency = 10000  //frequenza con cui vengono salvati i file di output sul computer

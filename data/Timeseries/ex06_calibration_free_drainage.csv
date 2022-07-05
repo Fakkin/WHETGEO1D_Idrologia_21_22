@@ -2,9 +2,9 @@
 Created,2021-03-21 16:53
 Author,HortonMachine library
 @H,timestamp,value_135
-ID,,135
+ID135
 Type,Date,double
-Format,yyyy-MM-dd HH:mm,
+Format,yyyy-MM-dd HH:mm 
 ,2003-01-01 00:00,-9999
 ,2003-01-01 01:00,-9999
 ,2003-01-01 02:00,-9999

@@ -9,7 +9,7 @@ def home = oms_prj
 
 
 
-def richardsGridFileName = "$oms_prj//data/Grid_NetCDF/ex00_GSS2021.nc" // Griglia elaborata col notebook
+def richardsGridFileName = "$oms_prj//data/Grid_NetCDF/ex00_grid_idrologia_21_22.nc" // Griglia elaborata col notebook
 
 def typeClosureEquation = "{Van Genuchten}"  // Modello curve SWRC
 

@@ -2,9 +2,9 @@
 Created,2021-06-22 11:30
 Author,HortonMachine library
 @H,timestamp,value_0,value_1,value_2,value_3
-ID,,0,1,2,3
+ID0,1,2,3
 Type,Date,double,double,double,double
-Format,yyyy-MM-dd HH:mm,,,,
+Format,yyyy-MM-dd HH:mm
 ,2003-01-01 00:00,-1.7499999999999998,-1.5,-1.0000000000000002,-0.5000002189498903
 ,2003-01-01 01:00,-1.75,-1.5,-1.0000000000000002,-0.5000030684325008
 ,2003-01-01 02:00,-1.75,-1.4999999999999998,-1.0000000000000002,-0.5000169358624867
