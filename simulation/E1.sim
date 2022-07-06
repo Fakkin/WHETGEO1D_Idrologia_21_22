@@ -25,7 +25,7 @@ def topBCType = "Top Dirichlet"  // tipo di Condizioni al contorno in superficie
 
 def bottomBCType = "Bottom free drainage"  // tipo di condizioni al contorno sul fondo
 
-def stationID = "0"
+def stationID = '0'
 
 def startDate= "2022-01-01 00:00"
 
