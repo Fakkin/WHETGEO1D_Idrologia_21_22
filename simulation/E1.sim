@@ -21,7 +21,7 @@ def typeUHCTemperatureModel = "notemperature"  //parametro temperatura
 
 def interfaceHydraulicConductivityModel = "max"  // lascia max
 
-def topBCType = "Top Dirichlet"  // tipo di Condizioni al contorno in superficie 
+def topBCType = "Top Coupled"  // tipo di Condizioni al contorno in superficie 
 
 def bottomBCType = "Bottom free drainage"  // tipo di condizioni al contorno sul fondo
 
@@ -29,11 +29,11 @@ def stationID = '0'
 
 def startDate= "2022-01-01 00:00"
 
-def endDate="2022-01-02 00:00"
+def endDate="2022-01-03 00:00"
 
 def tTimestep = 1 //minuti
 
-def topBCFileName = "$oms_prj//data/Timeseries/E1_water_ponding.csv"  // Boundary Condition condizioni al contorno TOP
+def topBCFileName = "$oms_prj//data/Timeseries/E1_water_ponding_10.csv"  // Boundary Condition condizioni al contorno TOP
 
 def bottomBCFileName = "$oms_prj//data/Timeseries/E1_free_drainage.csv"  // Bottom BC
 
