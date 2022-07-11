@@ -9,13 +9,13 @@ def home = oms_prj
 
 
 
-def richardsGridFileName = "$oms_prj//data/Grid_NetCDF/E2_grid_wet.nc"
+def richardsGridFileName = "$oms_prj//data/Grid_NetCDF/E2_grid - Copia.nc"
 
-def typeClosureEquation = "{Water Depth,Van Genuchten}"
+def typeClosureEquation = "{Water Depth,Van Genuchten}" //Water depth relazione suzione con volume d'acqua in superficie
 
 def typeEquationState = "{Water Depth,Van Genuchten}"
 
-def typeUHCModel = "{Mualem Van Genuchten}"
+def typeUHCModel = "{null,Mualem Van Genuchten}" // null perche non dobbiamo calcolare la conducibilità idraulica insatura per l'ultimo volume di controllo
 
 def typeUHCTemperatureModel = "notemperature"
 
@@ -33,11 +33,11 @@ def startDate= "2022-01-01 00:00"
 
 def endDate= "2022-01-05 00:00"
 
-def tTimestep = 1
+def tTimestep = 5
 
-def topBCFileName = "$oms_prj//data/Timeseries/E2_rain - Copia.csv"
+def topBCFileName = "$oms_prj//data/Timeseries/E3_rain_var.csv"
 
-def bottomBCFileName = "$oms_prj//data/Timeseries/E2_bottom_0.csv"
+def bottomBCFileName = "$oms_prj//data/Timeseries/E3_psi_-2.csv"
 
 def saveDatesFileName = "$oms_prj//data/Timeseries/E2_save_dates.csv"
 
