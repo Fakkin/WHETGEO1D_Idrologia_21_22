@@ -23,7 +23,7 @@ def interfaceHydraulicConductivityModel = "max"
 
 def topBCType = "Top Coupled"
 
-def bottomBCType = "Bottom Dirichlet"
+def bottomBCType = "Bottom Dirichlet" 
 
 def maxPonding = 0.0
 
@@ -37,7 +37,7 @@ def tTimestep = 5
 
 def topBCFileName = "$oms_prj//data/Timeseries/E3_rain_var.csv"
 
-def bottomBCFileName = "$oms_prj//data/Timeseries/E3_psi_-2.csv"
+def bottomBCFileName = "$oms_prj//data/Timeseries/E2_bot_psi_0.csv"
 
 def saveDatesFileName = "$oms_prj//data/Timeseries/E2_save_dates.csv"
 

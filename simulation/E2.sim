@@ -9,13 +9,13 @@ def home = oms_prj
 
 
 
-def richardsGridFileName = "$oms_prj//data/Grid_NetCDF/E2_grid - Copia.nc" // Griglia elaborata col notebook
+def richardsGridFileName = "$oms_prj//data/Grid_NetCDF/E2_Output.nc" // Griglia elaborata col notebook
 
-def typeClosureEquation = "{Van Genuchten}"  // Modello curve SWRC
+def typeClosureEquation = "{Water Depth, Van Genuchten}"  // Modello curve SWRC
 
-def typeEquationState = "{Van Genuchten}"
+def typeEquationState = "{Water Depth, Van Genuchten}"
 
-def typeUHCModel = "{Mualem Van Genuchten}"  // Conducibilità idraulica insatura
+def typeUHCModel = "{null,Mualem Van Genuchten}"  // Conducibilità idraulica insatura
 
 def typeUHCTemperatureModel = "notemperature"  //parametro temperatura
 
@@ -33,9 +33,9 @@ def endDate="2022-01-05 00:00"
 
 def tTimestep = 1 //minuti
 
-def topBCFileName = "$oms_prj//data/Timeseries/E2_rain - Copia.csv"  // Boundary Condition condizioni al contorno TOP
+def topBCFileName = "$oms_prj//data/Timeseries/E2_rain.csv"  // Boundary Condition condizioni al contorno TOP
 
-def bottomBCFileName = "$oms_prj//data/Timeseries/E2_bottom_0.csv"  // Bottom BC
+def bottomBCFileName = "$oms_prj//data/Timeseries/E2_bot_psi_0.csv"  // Bottom BC
 
 def saveDatesFileName = "$oms_prj//data/Timeseries/E2_save_dates.csv"  //serie temporale per decidere quali dati salvare
 
