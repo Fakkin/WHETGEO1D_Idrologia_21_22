@@ -11,14 +11,14 @@ def home = oms_prj
 
 def richardsGridFileName = "$oms_prj//data/Grid_NetCDF/E3_grid.nc"
 
-//def typeClosureEquation = "{Water Depth,Van Genuchten}"
-def typeClosureEquation = "{Water Depth,Brooks Corey}"
+def typeClosureEquation = "{Water Depth,Van Genuchten}"
+//def typeClosureEquation = "{Water Depth,Brooks Corey}"
 
-//def typeEquationState = "{Water Depth,Van Genuchten}"
-def typeEquationState = "{Water Depth,Brooks Corey}"
+def typeEquationState = "{Water Depth,Van Genuchten}"
+//def typeEquationState = "{Water Depth,Brooks Corey}"
 
-//def typeUHCModel = "{null,Mualem Van Genuchten}"
-def typeUHCModel = "{null,Mualem Brooks Corey}"
+def typeUHCModel = "{null,Mualem Van Genuchten}"
+//def typeUHCModel = "{null,Mualem Brooks Corey}"
 
 def typeUHCTemperatureModel = "notemperature"
 
@@ -44,7 +44,7 @@ def bottomBCFileName = "$oms_prj//data/Timeseries/E3_bot_psi_0.csv"
 
 def saveDatesFileName = "$oms_prj//data/Timeseries/E3_save_dates.csv"
 
-def outputFileName = "$oms_prj//output/E3_BC_out.nc"
+def outputFileName = "$oms_prj//output/E3_out.nc"
 
 
 def writeFrequency = 10000
